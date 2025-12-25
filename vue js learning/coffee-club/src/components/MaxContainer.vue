@@ -4,14 +4,4 @@
      </div>
 </template>
 
-<script>
-export default {
-     name: "MaxContainer",
 
-     props: {
-
-     }
-};
-</script>
-
-<style scoped></style>

@@ -136,7 +136,7 @@
 
 <script>
 export default {
-     name: "Navbar",
+     name: "DefaultNavbar",
      data() {
           return {
                isOpen: false,

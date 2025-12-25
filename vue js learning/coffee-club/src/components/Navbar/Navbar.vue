@@ -27,11 +27,6 @@ export default {
           SearchIcon,
           MaxContainer
      },
-     data() {
-          return {
-
-          }
-     }
 
 }
 </script>

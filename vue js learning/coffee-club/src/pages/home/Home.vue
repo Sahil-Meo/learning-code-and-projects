@@ -1,36 +1,46 @@
 <template>
+     <HeroSection />
      <MaxContainer>
-          <section class="py-20 md:py-28 text-center">
-               <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-4">
-                    Welcome to Coffee Club
-               </h1>
-
-               <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8">
-                    Discover and enjoy the best coffee blends, curated for every taste.
-               </p>
-
-               <div class="flex justify-center gap-4">
-                    <router-link to="/shop"
-                         class="inline-block bg-amber-700 hover:bg-amber-800 text-white font-medium py-3 px-6 rounded-md shadow">
-                         Shop Coffee
-                    </router-link>
-
-                    <router-link to="/learn"
-                         class="inline-block border border-gray-300 hover:bg-gray-50 text-gray-700 font-medium py-3 px-6 rounded-md">
-                         Learn More
-                    </router-link>
+          <div class="flex justify-between">
+               <h2 class="text-3xl sm:text-4xl font-medium text-white">Offers</h2>
+               <div class="flex gap-2 sm:gap-4">
+                    <button class="bg-[#181717] text-white w-10 h-10 rounded-full text-center self-center">
+                         <ChevronLeftIcon />
+                    </button>
+                    <button class="bg-[#181717] text-white w-10 h-10 rounded-full text-center self-center">
+                         <ChevronRightIcon />
+                    </button>
                </div>
-          </section>
+          </div>
      </MaxContainer>
 </template>
 
 <script>
-import MaxContainer from '@/components/MaxContainer.vue'
-
+import MaxContainer from '@/components/MaxContainer.vue';
+import HeroSection from './HeroSection.vue';
+import ChevronLeftIcon from '@/assets/icons/ChevronLeftIcon.vue';
+import ChevronRightIcon from '@/assets/icons/ChevronRightIcon.vue';
 export default {
-     name: 'home',
+     name: 'Home',
      components: {
-          MaxContainer
+          MaxContainer,
+          HeroSection,
+          ChevronLeftIcon,
+          ChevronRightIcon
+     },
+     methods: {
+          handleOrderClick() {
+               // Add your order logic here
+               console.log('Order now clicked');
+          },
+          handleLearnClick() {
+               // Add your learn more logic here
+               console.log('Learn About Us clicked');
+          }
      }
 }
 </script>
+
+<style scoped>
+/* Add any additional custom styles if needed */
+</style>

@@ -1,84 +1,73 @@
 <template>
-     <section class="bg-slate-900 text-white py-12 px-4">
-          <div class="max-w-7xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10">
-               <!-- LEFT CONTENT -->
-               <div class="w-full md:w-1/2">
-                    <!-- Subtitle -->
-                    <p class="text-sm uppercase tracking-widest text-gray-300 mb-3">
-                         {{ subtitle }}
-                    </p>
+     <section class="flex items-center">
+          <MaxContainer>
+               <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+                    <!-- Left Content -->
+                    <div class="text-white space-y-2 sm:space-y-4 col-span-3">
+                         <!-- Welcome Text -->
+                         <h3 class="text-coffee text-3xl sm:text-4xl font-medium">
+                              Welcome!
+                         </h3>
 
-                    <!-- Title -->
-                    <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight mb-4">
-                         {{ title }}
-                    </h1>
+                         <!-- Main Heading -->
+                         <h1 class="text-4xl lg:text-5xl font-semibold leading-tight">
+                              We serve the richest coffee in the city!
+                         </h1>
 
-                    <!-- Two-line description -->
-                    <p class="text-gray-300 mb-1">
-                         {{ descLine1 }}
-                    </p>
-                    <p class="text-gray-300 mb-6">
-                         {{ descLine2 }}
-                    </p>
+                         <!-- Description -->
+                         <p class="text-gray-300 text-base lg:text-lg leading-relaxed max-w-lg">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                              Suspendisse varius enim in eros elementum tristique.
+                         </p>
 
-                    <!-- Buttons -->
-                    <div class="flex flex-wrap gap-4">
-                         <button @click="onOrder"
-                              class="px-6 py-2 border-2 border-white text-white rounded-md hover:bg-white hover:text-slate-900 transition">
-                              Order Now
-                         </button>
+                         <!-- Buttons -->
+                         <div class="flex flex-wrap self-center gap-4 pt-4">
+                              <button
+                                   class="bg-coffee hover:bg-coffee text-white font-medium px-8 py-3 rounded-full transition duration-300"
+                                   @click="handleOrderClick">
+                                   Order now
+                              </button>
 
-                         <button @click="onLearn"
-                              class="px-6 py-2 border-2 border-white text-white rounded-md hover:bg-white hover:text-slate-900 transition">
-                              Learn More
-                         </button>
+                              <button
+                                   class="border-2 border-white hover:bg-white hover:text-coffee text-white font-medium px-8 py-3 rounded-full transition duration-300"
+                                   @click="handleLearnClick">
+                                   Learn About Us
+                              </button>
+                         </div>
+                    </div>
+
+                    <!-- Right Image -->
+                    <div class="flex justify-center lg:justify-end col-span-2">
+                         <div class="relative">
+                              <img src="../../assets/images/coffee_cups.png" alt="Coffee lover"
+                                   class="w-full max-w-md lg:max-w-lg object-contain" />
+                         </div>
                     </div>
                </div>
-
-               <!-- RIGHT IMAGE -->
-               <div class="w-full md:w-1/2 flex justify-center">
-                    <img :src="imageSrc" :alt="imageAlt" class="w-full max-w-md sm:max-w-lg rounded-lg" />
-               </div>
-          </div>
+          </MaxContainer>
      </section>
 </template>
 
 <script>
+import MaxContainer from '@/components/MaxContainer.vue';
 export default {
-     name: "HeroSection",
-     props: {
-          subtitle: {
-               type: String,
-               default: "Fresh & Delicious",
-          },
-          title: {
-               type: String,
-               default: "Taste the Best Food",
-          },
-          descLine1: {
-               type: String,
-               default: "Prepared with high-quality ingredients every day.",
-          },
-          descLine2: {
-               type: String,
-               default: "Fast delivery • Great taste • Affordable price",
-          },
-          imageSrc: {
-               type: String,
-               default: "https://via.placeholder.com/600x450",
-          },
-          imageAlt: {
-               type: String,
-               default: "Hero Image",
-          },
+     name: 'HeroSection',
+     components: {
+          MaxContainer
      },
      methods: {
-          onOrder() {
-               this.$emit("order");
+          handleOrderClick() {
+               // Add your order logic here
+               console.log('Order now clicked');
           },
-          onLearn() {
-               this.$emit("learn");
-          },
-     },
-};
+          handleLearnClick() {
+               // Add your learn more logic here
+               console.log('Learn About Us clicked');
+          }
+     }
+}
 </script>
+
+<style scoped>
+     
+</style>
