@@ -40,21 +40,26 @@
             <form class="space-y-4">
               <div>
                 <label class="block text-sm font-medium mb-2">Name</label>
-                <input type="text" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
+                <input type="text"
+                  class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Email</label>
-                <input type="email" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
+                <input type="email"
+                  class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Subject</label>
-                <input type="text" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
+                <input type="text"
+                  class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee">
               </div>
               <div>
                 <label class="block text-sm font-medium mb-2">Message</label>
-                <textarea rows="4" class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee"></textarea>
+                <textarea rows="4"
+                  class="w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md focus:outline-none focus:border-coffee"></textarea>
               </div>
-              <button type="submit" class="w-full bg-coffee text-white py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors">
+              <button type="submit"
+                class="w-full bg-coffee text-white py-2 px-4 rounded-md hover:bg-opacity-80 transition-colors">
                 Send Message
               </button>
             </form>
