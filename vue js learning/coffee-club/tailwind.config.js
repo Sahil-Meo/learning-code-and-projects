@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         coffee: "#C6663C",
+        sec:"#181717"
       },
     },
   },
