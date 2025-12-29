@@ -15,7 +15,8 @@
                </div>
                <div ref="scrollContainer" class="flex overflow-x-scroll bar scroll-smooth"
                     style="scrollbar-width: none; -ms-overflow-style: none;">
-                    <CoffeeCatCard :category="category" v-for="(category, index) in categories" :key="index" addClass="coffee-cat-card" />
+                    <CoffeeCatCard :category="category" v-for="(category, index) in categories" :key="index"
+                         addClass="coffee-cat-card" />
                </div>
           </section>
           <div class="my-20">
@@ -169,5 +170,4 @@ export default {
      scrollbar-width: none;
      /* Firefox */
 }
-
 </style>
