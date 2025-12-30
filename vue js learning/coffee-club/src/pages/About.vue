@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen bg-gray-900 text-white">
-    <div class="container mx-auto px-4 py-16">
+    <MaxContainer class="py-16">
       <h1 class="text-4xl font-bold text-center mb-8 text-coffee">About Coffee Club</h1>
       <div class="max-w-4xl mx-auto">
         <p class="text-lg mb-6">
@@ -36,12 +36,17 @@
           </div>
         </div>
       </div>
-    </div>
+    </MaxContainer>
   </div>
 </template>
 
 <script>
+import MaxContainer from '../components/MaxContainer.vue'
+
 export default {
-  name: 'About'
+  name: 'About',
+  components: {
+    MaxContainer
+  }
 }
 </script>
