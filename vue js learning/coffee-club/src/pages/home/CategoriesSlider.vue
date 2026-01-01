@@ -18,7 +18,28 @@
           <!-- Cards Wrapper - This moves left/right -->
           <div ref="sliderRef" class="flex transition-transform duration-500 ease-in-out"
             :style="{ transform: `translateX(${translateValue}%)` }" @transitionend="handleTransitionEnd">
-            <CoffeeCatCard v-for="category in cardsData" :key="category.id" />
+            <div v-for="(card, index) in clonedCards" :key="`${card.id}-${index}`" class="flex-shrink-0 px-3"
+              :style="{ width: `${cardWidth}%` }">
+              <div
+                :class="['bg-gradient-to-br', card.color, 'rounded-xl p-8 h-80 flex flex-col justify-between shadow-2xl hover:scale-105 transition-transform duration-300']">
+                <div>
+                  <div
+                    class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6 backdrop-blur-sm">
+                    <span class="text-3xl">☕</span>
+                  </div>
+                  <h3 class="text-3xl font-bold text-white mb-3">
+                    {{ card.title }}
+                  </h3>
+                  <p class="text-white/80 text-lg">
+                    {{ card.description }}
+                  </p>
+                </div>
+                <button
+                  class="bg-white/20 hover:bg-white/30 text-white font-semibold py-3 px-6 rounded-lg backdrop-blur-sm transition-all duration-300">
+                  Explore
+                </button>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -77,11 +98,8 @@
 </template>
 
 <script>
-import CoffeeCatCard from '@/components/CoffeeCatCard.vue';
-
 export default {
   name: 'SliderFile',
-  components:{CoffeeCatCard},
   data() {
     return {
       // Original 8 cards data

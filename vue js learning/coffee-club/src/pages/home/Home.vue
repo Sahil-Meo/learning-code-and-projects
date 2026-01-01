@@ -19,9 +19,16 @@
                          addClass="coffee-cat-card" />
                </div>
           </section>
+     </MaxContainer>
+     
+     <!-- Special Coffee Section -->
+     <CoffeeItems />
+     
+     <MaxContainer>
           <div class="my-20">
                <!-- <SliderFile /> -->
-               <MySlider />
+               <!-- <MySlider /> -->
+                
           </div>
      </MaxContainer>
 </template>
@@ -34,6 +41,9 @@ import ChevronRightIcon from '@/assets/icons/ChevronRightIcon.vue';
 import CoffeeCatCard from '@/components/CoffeeCatCard.vue';
 import SliderFile from './SliderFile.vue';
 import MySlider from './MySlider.vue';
+import CoffeeItems from './CoffeeItems.vue';
+import coffeeCup from '/public/images/coffee_cup.png'
+
 
 export default {
      name: 'Home',
@@ -44,7 +54,8 @@ export default {
           MaxContainer,
           HeroSection,
           ChevronLeftIcon,
-          ChevronRightIcon
+          ChevronRightIcon,
+          CoffeeItems
      },
      data() {
           return {
@@ -52,56 +63,56 @@ export default {
                currentIndex: 0,
                categories: [
                     {
-                         image: 'espresso',
+                         image: coffeeCup,
                          title: "Espresso",
                          description: "Rich and bold single shot of pure coffee excellence."
                     },
                     {
-                         image: 'cappuccino',
+                         image: coffeeCup,
                          title: "Cappuccino",
                          description: "Perfect balance of espresso, steamed milk, and foam."
                     },
                     {
-                         image: 'latte',
+                         image: coffeeCup,
                          title: "Caffè Latte",
                          description: "Smooth and creamy espresso with steamed milk."
                     },
                     {
-                         image: 'americano',
+                         image: coffeeCup,
                          title: "Americano",
                          description: "Classic espresso diluted with hot water for a lighter taste."
                     },
                     {
-                         image: 'mocha',
+                         image: coffeeCup,
                          title: "Mocha",
                          description: "Delicious blend of espresso, chocolate, and steamed milk."
                     },
                     {
-                         image: 'macchiato',
+                         image: coffeeCup,
                          title: "Macchiato",
                          description: "Espresso marked with a dollop of foamed milk."
                     },
                     {
-                         image: 'flatwhite',
+                         image: coffeeCup,
                          title: "Flat White",
                          description: "Velvety microfoam over a double shot of espresso."
                     },
                     {
-                         image: 'coldbrew',
+                         image: coffeeCup,
                          title: "Cold Brew",
                          description: "Smooth, naturally sweet coffee steeped in cold water."
                     },
                     {
-                         image: 'affogato',
+                         image: coffeeCup,
                          title: "Affogato",
                          description: "Hot espresso poured over vanilla ice cream delight."
                     },
                     {
-                         image: 'cortado',
+                         image: coffeeCup,
                          title: "Cortado",
                          description: "Equal parts espresso and warm milk, perfectly balanced."
                     }
-               ]
+               ],
           }
      },
      methods: {
