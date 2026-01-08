@@ -20,19 +20,19 @@
                </div>
           </section>
      </MaxContainer>
-     
+
      <!-- Special Coffee Section -->
      <CoffeeItems />
-     
+
      <!-- Banner Section -->
      <Banner />
-     
+
      <!-- Testimonials Section -->
      <Testimonials />
-     
+
      <!-- Newsletter Section -->
      <Newsletter />
-     
+
 </template>
 
 <script>

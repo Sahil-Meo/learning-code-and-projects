@@ -5,14 +5,10 @@
       <div class="text-center mb-8 md:mb-36">
         <h2 class="text-3xl md:text-4xl font-bold text-white">Our Happy Customers</h2>
       </div>
-      
+
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-        <TestimonialCard 
-          v-for="testimonial in testimonials" 
-          :key="testimonial.id"
-          :testimonial="testimonial"
-        />
+        <TestimonialCard v-for="testimonial in testimonials" :key="testimonial.id" :testimonial="testimonial" />
       </div>
     </MaxContainer>
   </section>

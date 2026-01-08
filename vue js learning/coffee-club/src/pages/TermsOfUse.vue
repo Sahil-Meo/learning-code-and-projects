@@ -7,7 +7,8 @@
           <section>
             <h2 class="text-2xl font-semibold mb-4 text-coffee">1. Acceptance of Terms</h2>
             <p class="text-gray-300 leading-relaxed">
-              By accessing and using Coffee Club's services, you accept and agree to be bound by the terms and provision of this agreement. 
+              By accessing and using Coffee Club's services, you accept and agree to be bound by the terms and provision
+              of this agreement.
               If you do not agree to abide by the above, please do not use this service.
             </p>
           </section>
@@ -15,8 +16,10 @@
           <section>
             <h2 class="text-2xl font-semibold mb-4 text-coffee">2. Use License</h2>
             <p class="text-gray-300 leading-relaxed mb-4">
-              Permission is granted to temporarily download one copy of the materials on Coffee Club's website for personal, 
-              non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+              Permission is granted to temporarily download one copy of the materials on Coffee Club's website for
+              personal,
+              non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under
+              this license you may not:
             </p>
             <ul class="text-gray-300 space-y-2 ml-6">
               <li>• modify or copy the materials</li>
@@ -29,9 +32,9 @@
           <section>
             <h2 class="text-2xl font-semibold mb-4 text-coffee">3. Disclaimer</h2>
             <p class="text-gray-300 leading-relaxed">
-              The materials on Coffee Club's website are provided on an 'as is' basis. Coffee Club makes no warranties, 
-              expressed or implied, and hereby disclaims and negates all other warranties including without limitation, 
-              implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement 
+              The materials on Coffee Club's website are provided on an 'as is' basis. Coffee Club makes no warranties,
+              expressed or implied, and hereby disclaims and negates all other warranties including without limitation,
+              implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement
               of intellectual property or other violation of rights.
             </p>
           </section>
@@ -39,9 +42,10 @@
           <section>
             <h2 class="text-2xl font-semibold mb-4 text-coffee">4. Limitations</h2>
             <p class="text-gray-300 leading-relaxed">
-              In no event shall Coffee Club or its suppliers be liable for any damages (including, without limitation, 
-              damages for loss of data or profit, or due to business interruption) arising out of the use or inability 
-              to use the materials on Coffee Club's website, even if Coffee Club or a Coffee Club authorized representative 
+              In no event shall Coffee Club or its suppliers be liable for any damages (including, without limitation,
+              damages for loss of data or profit, or due to business interruption) arising out of the use or inability
+              to use the materials on Coffee Club's website, even if Coffee Club or a Coffee Club authorized
+              representative
               has been notified orally or in writing of the possibility of such damage.
             </p>
           </section>

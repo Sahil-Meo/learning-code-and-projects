@@ -8,9 +8,8 @@
 }
 
 @media (max-width:768px) {
-     
-.banner-title {
-     line-height: 2.8rem !important;
-}
-}
 
+     .banner-title {
+          line-height: 2.8rem !important;
+     }
+}
