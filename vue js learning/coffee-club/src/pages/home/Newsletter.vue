@@ -1,7 +1,7 @@
 <template>
   <section class="py-8 md:py-12">
     <MaxContainer>
-      <div class="bg-sec rounded-2xl p-6 md:p-8 lg:p-12">
+      <div class="bg-sec rounded-xl px-4 sm:px-6 md:px-8 py-4">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           <!-- Left Content -->
@@ -38,7 +38,7 @@
                 class="bg-coffee text-white px-6 md:px-8 py-3 rounded-lg font-semibold hover:bg-opacity-80 transition-colors duration-300 whitespace-nowrap text-sm md:text-base disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {{ isLoading ? 'Subscribing...' : 'Subscribe' }}
-              </button>
+              </button>  
             </form>
             
             <!-- Success Message -->
@@ -59,7 +59,7 @@
               <img 
                 src="/images/coffee_cups.png" 
                 alt="Coffee Cups"
-                class="w-full h-auto object-contain"
+                class="max-h-60 object-contain"
               >
             </div>
           </div>
