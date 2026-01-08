@@ -39,7 +39,7 @@
                     <!-- Right Image -->
                     <div class="flex justify-center lg:justify-end col-span-2">
                          <div class="relative">
-                              <img src="../../assets/images/coffee_cups.png" alt="Coffee lover"
+                              <img src="/images/coffee_cups.png" alt="Coffee lover"
                                    class="w-full max-w-md lg:max-w-lg object-contain" />
                          </div>
                     </div>

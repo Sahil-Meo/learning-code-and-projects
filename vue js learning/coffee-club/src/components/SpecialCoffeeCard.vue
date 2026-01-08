@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-w-[250px] w-full bg-sec rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg flex-1">
+    class="min-w-[250px] w-full bg-sec overflow-hidden hover:transform hover:scale-105 transition-all duration-300 shadow-lg flex-1">
     <!-- Coffee Image -->
     <div class=" h-52 overflow-hidden">
       <img :src="coffee.image" :alt="coffee.name" class="w-full h-full object-cover">

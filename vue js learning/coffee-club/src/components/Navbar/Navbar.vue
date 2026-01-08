@@ -1,7 +1,7 @@
 <template>
      <MaxContainer>
           <dev class="flex items-center justify-between py-4 sm:py-6 md:py-8">
-               <div class="flex items-center"><img class="" src="../../assets/images/nav_logo.png" alt="logo image">
+               <div class="flex items-center"><img class="" src="/images/nav_logo.png" alt="logo image">
                </div>
                <NavItems />
                <div class="flex items-center gap-2">

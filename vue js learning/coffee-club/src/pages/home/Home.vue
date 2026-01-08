@@ -24,13 +24,15 @@
      <!-- Special Coffee Section -->
      <CoffeeItems />
      
-     <MaxContainer>
-          <div class="my-20">
-               <!-- <SliderFile /> -->
-               <!-- <MySlider /> -->
-                
-          </div>
-     </MaxContainer>
+     <!-- Banner Section -->
+     <Banner />
+     
+     <!-- Testimonials Section -->
+     <Testimonials />
+     
+     <!-- Newsletter Section -->
+     <Newsletter />
+     
 </template>
 
 <script>
@@ -42,6 +44,9 @@ import CoffeeCatCard from '@/components/CoffeeCatCard.vue';
 import SliderFile from './SliderFile.vue';
 import MySlider from './MySlider.vue';
 import CoffeeItems from './CoffeeItems.vue';
+import Banner from '@/components/Banner.vue';
+import Testimonials from './Testimonials.vue';
+import Newsletter from './Newsletter.vue';
 import coffeeCup from '/public/images/coffee_cup.png'
 
 
@@ -55,7 +60,10 @@ export default {
           HeroSection,
           ChevronLeftIcon,
           ChevronRightIcon,
-          CoffeeItems
+          CoffeeItems,
+          Banner,
+          Testimonials,
+          Newsletter
      },
      data() {
           return {

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.banner-title {
+     line-height: 3.8rem !important;
+}
+
+@media (max-width:768px) {
+     
+.banner-title {
+     line-height: 2.8rem !important;
+}
+}
+

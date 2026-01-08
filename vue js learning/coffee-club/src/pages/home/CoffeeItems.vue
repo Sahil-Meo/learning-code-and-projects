@@ -50,14 +50,14 @@ export default {
           name: 'Lungo Coffee',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
           price: 199,
-          image: '/images/coffee_cup.png'
+          image: '/images/lungo_coffee.webp '
         },
         {
           id: 2,
           name: 'Dalgona Coffee',
           description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
           price: 139,
-          image: '/images/coffee_mug.png'
+          image: '/images/Iced_Coffee.webp'
         },
         {
           id: 3,
